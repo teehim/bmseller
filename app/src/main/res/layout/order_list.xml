@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:background="@drawable/big_card">
+
+    <TextView
+        android:id="@+id/prod"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:text="Donut" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="10.00 baht" />
+
+    <ImageView
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:onClick="removeProd"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/remove" />
+
+</LinearLayout>

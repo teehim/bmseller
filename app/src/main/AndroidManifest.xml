@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="seller.bmwallet.com.bangmodseller" >
+
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:icon="@drawable/app_icon"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.TransSysBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SellingActivity"
+            android:configChanges="orientation"
+            android:icon="@drawable/beam_icon_white"
+            android:label="@string/title_activity_selling"
+            android:screenOrientation="landscape" >
+>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:icon="@drawable/beam_icon_white"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".AddProductActivity"
+            android:label="@string/title_activity_add_product"
+            android:icon="@drawable/beam_icon_white"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ManageProductActivity"
+            android:label="@string/title_activity_manage_product"
+            android:icon="@drawable/beam_icon_white"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ManagePromotionActivity"
+            android:label="@string/title_activity_manage_promotion"
+            android:icon="@drawable/beam_icon_white"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".RewardListDialogActivity"
+            android:label="@string/title_activity_reward_list_dialog"
+            android:icon="@drawable/beam_icon_white"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".TopUpActivity"
+            android:label="@string/title_activity_top_up"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
+        <activity
+            android:name=".ReportActivity"
+            android:label="@string/title_activity_report"
+            android:icon="@drawable/beam_icon_white"
+            android:screenOrientation="landscape" >
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="seller.bmwallet.com.bangmodseller.ManagePromotionActivity" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/addBtn"
+        android:title="Add Promotion"
+        android:orderInCategory="0"
+        android:icon="@drawable/add"
+        android:showAsAction="always"
+        />
+</menu>

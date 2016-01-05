@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="match_parent"
+    tools:context="seller.bmwallet.com.bangmodseller.PromoDetailFragment"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/camera" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|left"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="#666666"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="250dp"
+                android:inputType="text"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|left"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="#666666"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|left"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textColor="#666666"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/str_date"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:hint="Pick a Date..."
+                style="@android:style/Widget.Holo.Light.Spinner" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|left"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expire Date"
+                android:textColor="#666666"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/exp_date"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:hint="Pick a Date..."
+                style="@android:style/Widget.Holo.Light.Spinner" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|left"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use Member Points"
+                android:textColor="#666666"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/use_point"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:text="  "
+                    style="@android:style/Widget.Holo.Light.Spinner" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" points"
+                    android:textSize="18sp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rewardBtn"
+                    android:layout_marginLeft="10dp"
+                    android:text="Show Reward Set"/>
+            </LinearLayout>
+         </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="EDIT"
+                android:layout_marginRight="50dp"
+                android:id="@+id/posBtn"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="REMOVE"
+                android:id="@+id/negBtn"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

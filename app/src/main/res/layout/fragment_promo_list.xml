@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="seller.bmwallet.com.bangmodseller.ProdListFragment">
+
+    <ListView
+        android:layout_marginTop="7dp"
+        android:id="@+id/promo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="7dip"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="seller.bmwallet.com.bangmodseller.ReportActivity"
+android:orientation="vertical"
+    android:background="@color/seller_bg">
+
+<!-- TODO: Update blank fragment layout -->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#ffffffff"
+    android:weightSum="3">
+    <TextView
+        android:id="@+id/str_date"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:hint="Start Date"
+        android:onClick="setFilterOnClick"
+        android:layout_weight="1"
+        style="@android:style/Widget.Holo.Light.Spinner" />
+
+    <TextView
+        android:id="@+id/end_date"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:layout_weight="1"
+        android:onClick="setFilterOnClick"
+        android:text=""
+        android:hint="End Date"
+        style="@android:style/Widget.Holo.Light.Spinner" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitBtn"
+        android:text="Submit"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rep_prod"
+                android:textSize="50sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:onClick="selectReport"
+                android:background="@color/white"
+                android:text="Product"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rep_daily"
+                android:textSize="50sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:onClick="selectReport"
+                android:background="@color/white"
+                android:text="Daily"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rep_monthly"
+                android:textSize="50sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:onClick="selectReport"
+                android:background="@color/white"
+                android:text="Monthly"/>
+        </LinearLayout>
+        <ListView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/report_list"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

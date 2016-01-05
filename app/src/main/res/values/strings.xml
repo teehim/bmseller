@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bangmod Seller</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_selling">Selling</string>
+    <string name="title_activity_main">Main Menu</string>
+    <string name="title_activity_productctivity">Productctivity</string>
+    <string name="title_activity_add_product">AddProductActivity</string>
+    <string name="title_activity_manage_product">Manage Product</string>
+    <string name="title_activity_manage_promotion">Manage Promotion</string>
+    <string name="title_activity_reward_list_dialog">RewardListDialogActivity</string>
+    <string name="title_activity_top_up">TopUpActivity</string>
+    <string name="title_activity_report">Report</string>
+
+</resources>
